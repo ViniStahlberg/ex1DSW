@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário parte 2</h1>
+    </header>
+
+    <hr>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Informações</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Contato</h2>
+            <p>Entre em contato conocsco para informações ou reclamações sobre nosso serviço.</p>
+        </section>
+        <section>
+            <form method="post">
+                <label>Nome: </label>
+                <input type="text" name="nome" id="nome">
+                <br><br>
+                <label>Email: </label>
+                <input type="email" name="email" id="email">
+                <br><br>
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label>Endereço: </label>
+                    <br>
+                    <textarea name="endereco" id="endereco" cols="80" rows="5"></textarea>
+                    <br>
+                    <select name="estado" id="estado">
+                        <optgroup>
+                            <option value="sp">São Paulo</option>
+                        </optgroup>
+                        <optgroup>
+                            <option value="rs">Rio Grande do Sul</option>
+                        </optgroup>
+                    </select>
+                    <br><br>
+                    <label>Altura (em metros): </label>
+                    <input type="number" name="altura" id="altura" step="0.1" min="0" max="3">
+                    <label>data: </label>
+                    <input type="date" name="data" id="data">
+                    <br><br>
+                    <label>Cidade: </label>
+                    <input list="cidades" name="cidade" id="cidade">
+                    <datalist id="cidades">
+                        <option value="Araraquara"></option>
+                        <option value="São carlos"></option>
+                        <option value="Ibaté"></option>
+                    </datalist>
+                </fieldset> 
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

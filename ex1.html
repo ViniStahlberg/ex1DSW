@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <section>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <form method="post">
+                    <label>Nome: </label>
+                    <input type="text" name="nome" id="nome">
+                    <select name="gen" id="gen">
+                        <option value="Masculino">Maculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </form>
+            </fieldset>
+        </section>
+        <hr>
+        <hr>
+        <section>
+            <form method="get">
+                <label>País: </label>
+                <select name="pais" id="pais">
+                    <optgroup>
+                        <option value="br">Brasil</option>
+                        <option value="eua">Estados Unidos</option>
+                        <option value="can">Canadá</option>
+                    </optgroup>
+                    <optgroup>
+                        <option value="jap">Japão</option>
+                    </optgroup>
+                    <optgroup>
+                        <option value="ale">Alemanha</option>
+                    </optgroup>
+                </select>
+            </form>
+        </section>
+        <hr><hr>
+        <section>
+            <form method="get">
+                <label>Dê seu feedback: </label>
+                <br>
+                <textarea name="feed" id="feed" cols="30" rows="10"></textarea>
+                <br>
+                <input type="date" name="data" id="data">
+                <br>
+                <input type="number" name="num" id="num" min="1" max="100" step="2">
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
